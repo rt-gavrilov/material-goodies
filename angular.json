@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "material-goodies": {
+      "root": "projects/material-goodies",
+      "sourceRoot": "projects/material-goodies/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/material-goodies/tsconfig.lib.json",
+            "project": "projects/material-goodies/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/material-goodies/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/material-goodies/src/test.ts",
+            "tsConfig": "projects/material-goodies/tsconfig.spec.json",
+            "karmaConfig": "projects/material-goodies/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/material-goodies/tsconfig.lib.json",
+              "projects/material-goodies/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "material-goodies-demo-app"
