@@ -1,0 +1,19 @@
+<ng-template>
+  <div class="wrapper">
+    <ng-container *ngIf="title">
+      <h1>{{title}}</h1>
+      <br>
+    </ng-container>
+
+    <div>
+      <ng-content></ng-content>
+    </div>
+
+    <br>
+    <div fxLayoutAlign="space-between center">
+      <button fxFlex="none" mat-button *ngIf="cancelLabel" (click)="onCancelClicked()">{{cancelLabel}}</button>
+      <div fxFlex="stretch"></div>
+      <button fxFlex="none" mat-button color="primary" *ngIf="okLabel" (click)="onOkClicked()">{{okLabel}}</button>
+    </div>
+  </div>
+</ng-template>

@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build:demo": "ng build --prod",
+    "build:lib": "ng build material-goodies --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -12,11 +13,14 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "6.1.1",
+    "@angular/cdk": "6.4.3",
     "@angular/common": "6.1.1",
     "@angular/compiler": "6.1.1",
     "@angular/core": "6.1.1",
+    "@angular/flex-layout": "6.0.0-beta.17",
     "@angular/forms": "6.1.1",
     "@angular/http": "6.1.1",
+    "@angular/material": "6.4.3",
     "@angular/platform-browser": "6.1.1",
     "@angular/platform-browser-dynamic": "6.1.1",
     "@angular/router": "6.1.1",

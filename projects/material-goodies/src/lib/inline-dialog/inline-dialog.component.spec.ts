@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MaterialGoodiesComponent } from './material-goodies.component';
+import { InlineDialogComponent } from './inline-dialog.component';
 
-describe('MaterialGoodiesComponent', () => {
-  let component: MaterialGoodiesComponent;
-  let fixture: ComponentFixture<MaterialGoodiesComponent>;
+describe('InlineDialogComponent', () => {
+  let component: InlineDialogComponent;
+  let fixture: ComponentFixture<InlineDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MaterialGoodiesComponent ]
+      declarations: [ InlineDialogComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MaterialGoodiesComponent);
+    fixture = TestBed.createComponent(InlineDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
